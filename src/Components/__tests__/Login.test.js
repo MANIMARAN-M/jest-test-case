@@ -1,5 +1,5 @@
-import { render, screen, cleanup } from "@testing-library/react";
-import App from "../../App";
+import { cleanup } from "@testing-library/react";
+// import App from "../../App";
 import renderer from "react-test-renderer";
 import Login from "../Login";
 import { shallow, configure } from "enzyme";
@@ -7,7 +7,7 @@ import Adapter from "enzyme-adapter-react-16";
 
 configure({ adapter: new Adapter() });
 
-// afterEach(cleanup);
+afterEach(cleanup);
 describe("Login component tests", () => {
   const wrapper = shallow(<Login />);
   it("should have a btn component", () => {

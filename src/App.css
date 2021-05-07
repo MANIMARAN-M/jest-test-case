@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 .LoginForm {
   width: 600px;
@@ -32,4 +31,11 @@
   width: 100%;
   padding: 5px;
   outline: none;
+}
+.testButton {
+  padding: 8px 20px;
+}
+.appButtonTest {
+  text-align: center;
+  margin: 30px 0;
 }
